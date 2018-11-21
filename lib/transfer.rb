@@ -11,7 +11,7 @@ def valid?
   sender.valid? && receiver.valid?
 end
 def execute_transaction
-self.valid? && sender.balance > amount 
+self.valid? && sender.balance > amount && status == "pending"
 end
 def reverse_transfer
 end

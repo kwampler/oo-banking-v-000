@@ -12,7 +12,7 @@ def valid?
   @status == "open" && @balance > 0
 end
 def close_account
-  @bank_account == "closed"
+  @bank_account = "closed"
 end
 def deposit(money)
 @balance += money

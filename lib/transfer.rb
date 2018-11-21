@@ -8,6 +8,7 @@ def initialize(sender, receiver, amount)
   @sender = sender
 end
 def valid?
+  sender.valid
 end
 def execute_transaction
   
